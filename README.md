@@ -2,7 +2,7 @@
 
 A new Flutter project.
 
-# Is a UI template
+# Is an UI template
 
 ## Getting Started
 
