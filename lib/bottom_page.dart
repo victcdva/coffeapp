@@ -1,3 +1,4 @@
+import 'package:coffeapp/home_page.dart';
 import 'package:flutter/material.dart';
 
 class BottomPage extends StatefulWidget {
@@ -10,10 +11,7 @@ class _BottomPageState extends State<BottomPage> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOption = <Widget>[
-    Text(
-      "page1",
-      style: optionStyle,
-    ),
+    HomePage(),
     Text(
       "page2",
       style: optionStyle,
