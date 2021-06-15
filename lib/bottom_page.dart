@@ -8,20 +8,22 @@ class BottomPage extends StatefulWidget {
 
 class _BottomPageState extends State<BottomPage> {
   int _selectedIndex = 0;
+
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+
   static List<Widget> _widgetOption = <Widget>[
     HomePage(),
     Text(
-      "page2",
+      "Page2",
       style: optionStyle,
     ),
     Text(
-      "page3",
+      "Page3",
       style: optionStyle,
     ),
     Text(
-      "page4",
+      "Page4",
       style: optionStyle,
     ),
   ];
@@ -49,29 +51,33 @@ class _BottomPageState extends State<BottomPage> {
           showUnselectedLabels: false,
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.home,
-                  size: 30,
-                ),
-                label: "Home"),
+              icon: Icon(
+                Icons.home,
+                size: 30,
+              ),
+              label: "Home",
+            ),
             BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.shop_rounded,
-                  size: 30,
-                ),
-                label: "Business"),
+              icon: Icon(
+                Icons.shop_rounded,
+                size: 30,
+              ),
+              label: "Business",
+            ),
             BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.favorite,
-                  size: 30,
-                ),
-                label: "Favorite"),
+              icon: Icon(
+                Icons.favorite,
+                size: 30,
+              ),
+              label: "favorite",
+            ),
             BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.notifications,
-                  size: 30,
-                ),
-                label: "Notifications"),
+              icon: Icon(
+                Icons.notifications,
+                size: 30,
+              ),
+              label: "notifications",
+            ),
           ],
           currentIndex: _selectedIndex,
           unselectedItemColor: Color(0xff4e5053),
